@@ -1,3 +1,5 @@
+<?php include('php/login.inc.php'); ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,31 +13,27 @@
 </head>
 
 <body>
-    <?php
-    include('config.php');
-    include('login.inc.php');
-    ?>
 
     <div class="container-lg">
+
         <form action="login.php" method="post">
-            <?php include('errors.php'); ?>
+            <?php include('php/errors.php'); ?>
             <div class="form-group">
-                <label for="inputEmail">Email Address</label>
+                <label for="email">Email Address</label>
                 <input type="email" name="email" class="form-control" placeholder="Enter email">
             </div>
 
             <div class="form-group">
-                <label for="inputPassword">Password</label>
+                <label for="password">Password</label>
                 <input type="password" name="password" class="form-control" placeholder="Password">
-
             </div>
+
             <div class="form-group">
                 <button type="submit" name="login-submit" class="btn btn-primary">Submit</button>
             </div>
 
-            <div class="form-text">
-                <p>Not yet a member? <a href="register.php">Sign up</a></p>
-            </div>
+            <p>Not yet a member? <a href="register.php">Sign up</a></p>
+
         </form>
     </div>
 </body>

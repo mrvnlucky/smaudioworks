@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <?php require('config.php'); ?>
+    <?php require('php/config.php'); ?>
 
     <!-- Navbar -->
     <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark">
@@ -52,8 +52,8 @@
 
             <!-- Sign Up and Login Button -->
             <form class="form-inline">
-                <button class="btn btn-success" type="button">Sign Up</button>
-                <button class="btn btn-outline-secondary" type="button">Login</button>
+                <a href="signup.php" class="btn btn-success">Sign Up</a>
+                <a href="login.php" class="btn btn-outline-secondary">Login</a>
             </form> <!-- .form-inline -->
         </div> <!-- #navbarSupportedContent -->
     </nav> <!-- .navbar -->
